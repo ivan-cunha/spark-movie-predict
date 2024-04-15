@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  pyspark:
+    image: pyspark:dev
+    container_name: pyspark
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/usr/src
